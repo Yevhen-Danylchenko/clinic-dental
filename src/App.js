@@ -22,16 +22,17 @@ function App() {
             <li>
               <Link to="/AddPatient">пацієнти</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/Contact">контакти</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/AddDoctor" element={<AddDoctor />} />
           <Route path="/AddPatient" element={<AddPatient />} />
-          <Route path="/Contact" element={<Contact />} />
+          {/* <Route path="/Contact" element={<Contact />} /> */}
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
